@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Exam Marks Percentage Calculator-->
+    <div class="calculatorDiv">
+        <h1 id="firstH1">Exam Marks Percentage Calculator</h1>
+        <hr ><br>
+        <div>
+            <!-- Defines a field for entering a number-->
+            <label> Scored Marks </label>
+            <input type="number" id="scoredMarks" />
+            <label>Out of Marks</label>
+            <input type="number" id="outOfMarks" />
+
+            <!-- onclick event is to call the function when
+                user click on the button-->
+            <button id="calculator1">Calculate</button>
+            <button id = "reset"><a href="/">Reset</a></button>
+
+            <!-- Read-only input field to display 
+            output and cannot be modified -->
+            <label id="label1">Percentage of Overall Scored Marks </label>
+            <br><input type="text" id="output1" readonly />%</label>
+            
+        </div>
+    </div>
+    
+    
+    <!-- CGPA to Percentage Calculator-->
+    <div class="calculatorDiv">
+        <h1 id="firstH1">CGPA To Percentage Calculator</h1>
+        <hr ><br>
+        <div>
+            <!-- Defines a field for entering a number-->
+            <label> CGPA <input type="number" id="cgpa" /> </label>        
+
+            <!-- onclick event is to call the function when
+                user click on the button-->
+            <button id="calculator2">=</button>
+    
+            <!-- Read-only input field to display 
+            output and cannot be modified -->
+            <label id="label1">Percentage <input type="text" id="output2" readonly /></label>
+
+        </div>
+    </div>
+
+
+    <!-- Percentage Calculator -->   
+    <div class="calculatorDiv">
+        <h1 id="firstH1"> Percentage Calculator</h1>
+        <hr ><br>
+        <div>
+            
+            <label>
+                <!-- Defines a field for entering a number-->
+                <input type="number" id="per"  /> Of
+                <input type="number" id="amt" /> = 
+
+                <!-- Read-only input field to display 
+                output and cannot be modified -->
+                <input type="text" id="output3" readonly />
+            </label>
+            
+            <!-- onclick event is to call the function when
+                user click on the button-->
+            <button id="calculator3">Calculate</button>
+            <button id = "clear1"><a href="/">Clear</a></button>
+  
+        </div>
+    </div>
+
+
+    <!-- Percentage Calculator in Common Phrases -->  
+    <div class="calculatorDiv">
+        <h1 id="secondH1">Percentage Calculator in Common Phrases</h1>
+        <hr ><br>
+        <div class="subDiv">
+            <div>
+                <p>
+                    <!-- Defines a field for entering a number-->
+                    What is<input type="number" id="per1"  /> Of
+                    <input type="number" id="amt1" /> = 
+    
+                    <!-- Read-only input field to display 
+                    output and cannot be modified -->
+                    <input type="text" id="output4" readonly />
+
+                    <!-- onclick event is to call the function when
+                    user click on the button-->
+                    <button id="calculator4">Calculate</button>
+                </p>
+            </div>
+        </div><br>
+
+        <div class="subDiv">
+            <div>
+                <p>
+                    <!-- Defines a field for entering a number-->
+                    <input type="number" id="val1"  /> is what % of
+                    <input type="number" id="val2" /> = 
+    
+                    <!-- Read-only input field to display 
+                    output and cannot be modified -->
+                    <input type="text" id="output5" readonly />
+
+                    <!-- onclick event is to call the function when
+                    user click on the button-->
+                    <button id="calculator5">Calculate</button>
+                </p>
+                
+            </div>
+        </div><br>
+
+        <div class="subDiv">
+            <div>
+                <p>
+                    <!-- Defines a field for entering a number-->
+                    <input type="number" id="val3"  /> is
+                    <input type="number" id="val4" /> of what =
+    
+                    <!-- Read-only input field to display 
+                    output and cannot be modified -->
+                    <input type="text" id="output6" readonly />
+
+                    <!-- onclick event is to call the function when
+                    user click on the button-->
+                    <button id="calculator6">Calculate</button>
+                </p>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    <!-- Percentage Difference Calculator -->
+    <div class="calculatorDiv">
+        <h1 id="firstH1">Percentage Difference Calculator</h1>
+        <hr ><br>
+        <div>
+            <!-- Defines a field for entering a number-->
+            <label>Value 1 <input type="number" id="Value_1" /></label>
+            <label>Value 2 <input type="number" id="Value_2" /></label>
+
+            <!-- Read-only input field to display 
+            output and cannot be modified -->
+            <label> Percentage Difference <input type="text" id="output7" readonly /></label>
+        
+            <!-- onclick event is to call the function when
+                user click on the button-->
+            <button id="calculator7">Calculate</button>
+            <button id = "clear2"><a href="/">Clear</a></button>
+            
+        </div>
+    </div>
+    
+    
+    <!-- Percentage Change Calculator -->
+    <div class="calculatorDiv">
+        <h1 id="firstH1">Percentage Change Calculator</h1>
+        <hr ><br>
+        <div>
+            <!-- Defines a field for entering a number-->
+            <label> 
+                <input type="number" id="Val_1" />
+                <select>
+                    <option value="inc">Increase</option>
+                    <option value="dec">Decrease</option>
+                </select>
+                <input type="number" id="Val_2" />=
+             
+                <!-- Read-only input field to display 
+                output and cannot be modified -->
+                <br><input type="text" id="output8" readonly /></label>
+
+            <!-- onclick event is to call the function when
+                user click on the button-->
+            <button id="calculator8">Calculate</button>
+            <button id = "clear3"><a href="/">Clear</a></button>           
+            
+        </div>
+    </div>   
+    
+    <script src="./script.js"></script>
+</body>
+</html>

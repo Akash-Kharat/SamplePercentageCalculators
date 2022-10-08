@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+ 
+/* The user display allows you to specify the
+background colour and height. The 
+display:flex property, which is aligned at the
+centre, is used to fill available free space 
+or to shrink them to prevent overflow. */
+body {
+    background-color: #f7f7f7;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ 
+/* font-weight Specifies weight of glyphs 
+in the font, their degree of blackness or 
+stroke */
+h1 {
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+ 
+/* div {
+    width: 480px;
+    background-color: #fff;
+    margin: 12px 0;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 2px 2px 8px 2px #aaa;
+} */
+ 
+input[type=number] {
+    width: 84px;
+    font-size: 18px;
+    padding: 8px;
+    margin: 0px 8px 8px 8px;
+}
+ 
+/* The text-transform:uppercase property 
+causes characters to be raised to uppercase. 
+The button's font-weight, font-size, and 
+cursor type can be customised by the user. */
+button {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 12px 0;
+    padding: 8px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+ 
+/* The font-weight, font-size, background-color, 
+and border can all be customized by the user. 
+The border-radius property allows you to give 
+an element rounded corners.*/
+input[type=text] {
+    font-size: 22px;
+    padding: 8px 0;
+    font-weight: 900;
+    text-align: center;
+    background-color: #f7f7f7;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+label{
+    font-size: 18px;
+    padding: 0;
+    padding: 8px 0;
+    font-weight: 900;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+
+p{
+    font-size: 18px;
+    padding: 0;
+    padding: 8px 0;
+    font-weight: 900;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start; 
+}
+
+#label1{
+    font-size: 20.5px;
+    padding: 0;
+    padding: 8px 0;
+    font-weight: 900;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+
+.calculatorDiv{
+    width: 600px;
+    background-color: rgb(239, 245, 221);
+    margin: 12px 0;
+    padding: 24px;
+    text-align: center;
+    border: 1px solid rgba(97, 12, 12, 0.82);
+}
+
+.subDiv{
+    width: 560px;
+    background-color: rgb(209, 214, 197);
+    text-align: center;
+    border: 2px solid rgba(235, 24, 24, 0.82);
+}
+
+#firstH1{
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 28px;
+}
+
+#secondH1{
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+/* Exam Marks Percentage Calculator */
+#scoredMarks{
+    width: 500px;
+    font-size: 18px;
+    padding: 8px;
+    margin: 0px 8px 8px 8px; 
+    background-color: #f7f7f7;
+}
+
+#outOfMarks{
+    width: 500px;
+    font-size: 18px;
+    padding: 8px;
+    margin: 0px 8px 8px 8px; 
+    background-color: #f7f7f7;
+}
+
+#calculator1{
+    background-color: #92ebdd;
+    width: 400px;
+}
+
+#reset{
+    background-color: #aebec0;
+    width: 90px;
+}
+
+#output1{
+    align-self: start;
+    width: 500px;
+    font-size: 18px;
+    padding: 8px;
+    margin: 0px 8px 8px 8px; 
+    background-color: #f7f7f7;
+}
+
+/* CGPA to Percentage Calculator */
+#cgpa{
+    width: 405px;
+    font-size: 18px;
+    padding: 8px;
+    margin: 0px 8px 8px 90px;
+}
+
+#calculator2{
+    background-color: #92ebdd;
+    width: 300px;
+    margin: 0px 8px 8px 130px;
+}
+
+#output2{
+    align-self: start;
+    width: 500px;
+    font-size: 18px;
+    padding: 8px;
+    margin: 0px 8px 8px 8px; 
+    background-color: #f7f7f7;
+}
+
+/*Percentage Calculator */
+#per{
+    width: 152px;
+    font-size: 18px;
+    padding: 8px;
+    margin: 0px 8px 8px 8px;
+}
+
+#amt{
+    width: 152px;
+    font-size: 18px;
+    padding: 8px;
+}
+
+#output3{
+    width: 152px;
+    font-size: 18px;
+    padding: 8px;
+    margin: 0px 8px 8px 8px;
+}
+
+#calculator3{
+    background-color: #92ebdd;
+    width: 200px;
+}
+
+#clear1{
+    background-color: #aebec0;
+    width: 100px;
+}
+
+/* Percentage Calculator in common phrases */
+#per1{
+    width: 100px;
+    font-size: 18px;
+    padding: 8px;
+    margin: 0px 8px 8px 8px;
+}
+
+#amt1{
+    width: 90px;
+    font-size: 18px;
+    padding: 8px;
+}
+
+#output4{
+    width: 100px;
+    font-size: 18px;
+    padding: 8px;
+    margin: 0px 8px 8px 8px;
+}
+
+#calculator4{
+    background-color: #92ebdd;
+    width: 100px;
+    font-size: 14px;
+}
+
+#val1{
+    width: 85px;
+    font-size: 18px;
+    padding: 8px;
+    margin: 0px 8px 8px 8px;
+}
+
+#val2{
+    width: 85px;
+    font-size: 18px;
+    padding: 8px;
+}
+
+#output5{
+    width: 85px;
+    font-size: 18px;
+    padding: 8px;
+    margin: 0px 8px 8px 8px;
+}
+
+#calculator5{
+    background-color: #92ebdd;
+    width: 100px;
+    font-size: 14px;
+}
+
+#val3{
+    width: 90px;
+    font-size: 18px;
+    padding: 8px;
+    margin: 0px 8px 8px 8px;
+}
+
+#val4{
+    width: 85px;
+    font-size: 18px;
+    padding: 8px;
+}
+
+#output6{
+    width: 100px;
+    font-size: 18px;
+    padding: 8px;
+    margin: 0px 8px 8px 8px;
+}
+
+#calculator6{
+    background-color: #92ebdd;
+    width: 100px;
+    font-size: 14px;
+}
+
+/* Pecentage Difference Calculator */
+#Value_1{
+    width: 450px;
+    font-size: 18px;
+    padding: 8px;
+    margin: 0px 8px 8px 8px; 
+    background-color: #f7f7f7;
+}
+
+#Value_2{
+    width: 450px;
+    font-size: 18px;
+    padding: 8px;
+    margin: 0px 8px 8px 8px; 
+    background-color: #f7f7f7;
+}
+
+#output7{
+    width: 300px;
+    font-size: 18px;
+    padding: 8px;
+    margin: 0px 8px 8px 8px;
+}
+
+#calculator7{
+    background-color: #92ebdd;
+    width: 150px;
+}
+
+#clear2{
+    background-color: #aebec0;
+    width: 100px;
+}
+
+/* Percentage Change Calculator */
+#Val_1{
+    width: 120px;
+    font-size: 18px;
+    padding: 8px;
+    margin: 0px 8px 8px 8px; 
+    background-color: #f7f7f7;
+}
+
+select{
+    padding: 8px;
+    font-size: 18px;
+}
+
+#Val_2{
+    width: 120px;
+    font-size: 18px;
+    padding: 8px;
+    margin: 0px 8px 8px 8px; 
+    background-color: #f7f7f7;
+}
+
+#output8{
+    width: 150px;
+    font-size: 18px;
+    padding: 8px;
+    margin: 0px 8px 8px 8px;
+}
+
+#calculator8{
+    background-color: #92ebdd;
+    width: 150px;
+}
+
+#clear3{
+    background-color: #aebec0;
+    width: 100px;
+}
