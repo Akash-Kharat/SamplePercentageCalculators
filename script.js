@@ -74,5 +74,12 @@ function percentDifferenceCalculator(){
 function percentChangeCalculator(){
     var Val_1 = document.getElementById("Val_1").value;
     var Val_2 = document.getElementById("Val_2").value;
-    document.getElementById("output8").value = Val_1 * (1+(10/100));
+    const action=document.getElementById("action").value;
+    if(action==="inc"){
+        document.getElementById("output8").value = Val_1 * (1+(Val_2/100));
+    }
+    else{
+        document.getElementById("output8").value = Val_1 * (1-(Val_2/100));
+    }
+    
 }
