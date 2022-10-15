@@ -92,7 +92,7 @@ function percentDifferenceCalculator(){
     // const calculateValue = (Value_1+Value_2);
     // var absoluteValue = Math.abs(Value_1 - Value_2);
     
-    document.getElementById("output7").value = (Math.abs(Value_1 - Value_2)/((Value_1+Value_2)/2))*100;
+    document.getElementById("output7").value = ((Math.abs(Value_1 - Value_2)/((Value_1+Value_2)/2))*100).toFixed(2);
 }
 
 //Percentage Change Calculator
