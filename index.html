@@ -50,16 +50,16 @@
             <!-- Defines a field for entering a number-->
             <div class="input row">
                 <label for="cgpa"> CGPA  </label>        
-                <input type="number" id="cgpa" />
+                <input type="number" id="output22" oninput="cgpaToPercentage()" min="0" max="10"/>
             </div>
 
-            <button id="calculator2">=</button>
+            <div><h1>=</h1></div>
     
             <!-- Read-only input field to display 
             output and cannot be modified -->
             <div class="input row">
                 <label id="label1">Percentage </label>
-                <input type="text" id="output2" readonly />
+                <input type="text" id="output21" oninput="percentageToCgpa()" min="0" max="100"/>
             </div>
             
 
@@ -92,30 +92,30 @@
         <div class="subDiv">
             <div>
                    <span>What is</span> 
-                   <input type="number" id="per1"  /><span>% of</span> 
-                    <input type="number" id="amt1" /><span>=</span>
+                   <input type="number" id="per1" oninput="percentcalculatorInCommonPhrases_1()" min="0" /><span>% of</span> 
+                    <input type="number" id="amt1" oninput="percentcalculatorInCommonPhrases_1()" min="0"/><span>=</span>
                     <input type="text" id="output4" readonly />
-                    <button id="calculator4">Calculate</button>
+                    <!-- <button id="calculator4">Calculate</button> -->
             </div>
         </div><br>
         <hr><br>
         <div class="subDiv">
             <div>
 
-                    <input type="number" id="val1"  /><span>is what % of</span> 
-                    <input type="number" id="val2" /> <span>= </span>
+                    <input type="number" id="val1" oninput="percentcalculatorInCommonPhrases_2()" min="0" /><span>is what % of</span> 
+                    <input type="number" id="val2" oninput="percentcalculatorInCommonPhrases_2()" min="0" /> <span>= </span>
                     <input type="text" id="output5" readonly />
-                    <button id="calculator5">Calculate</button>
+                    <!-- <button id="calculator5">Calculate</button> -->
  
             </div>
         </div><br>
         <hr><br>
         <div class="subDiv">
             <div>
-                    <input type="number" id="val3"  /><span>is</span>
-                    <input type="number" id="val4" /> <span>of what =</span>
+                    <input type="number" id="val3"  oninput="percentcalculatorInCommonPhrases_3()" min="0"/><span>is</span>
+                    <input type="number" id="val4" oninput="percentcalculatorInCommonPhrases_3()" min="0"/> <span>of what =</span>
                     <input type="text" id="output6" readonly />
-                    <button id="calculator6">Calculate</button>
+                    <!-- <button id="calculator6">Calculate</button> -->
             </div>
         </div>
         

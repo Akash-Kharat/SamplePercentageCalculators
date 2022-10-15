@@ -126,6 +126,7 @@ p{
 #calculator6{
     font-size: 16px;
 }
+
 span{
     font-weight: 600;
     display: flex;
@@ -150,4 +151,11 @@ select{
 #action{
     border-radius: 0.3rem;
     font-weight: 700;
+}
+
+.output{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,17 +1,17 @@
 const calculator1 = document.getElementById("calculator1");
 const calculator2 = document.getElementById("calculator2");
 const calculator3 = document.getElementById("calculator3");
-const calculator4 = document.getElementById("calculator4");
-const calculator5 = document.getElementById("calculator5");
-const calculator6 = document.getElementById("calculator6");
+// const calculator4 = document.getElementById("calculator4");
+// const calculator5 = document.getElementById("calculator5");
+// const calculator6 = document.getElementById("calculator6");
 const calculator7 = document.getElementById("calculator7");
 const calculator8 = document.getElementById("calculator8");
 calculator1.addEventListener("click", overallPercentage);
-calculator2.addEventListener("click", cgpaToPercentage);
+// calculator2.addEventListener("click", cgpaToPercentage);
 calculator3.addEventListener("click", percentCalculator);
-calculator4.addEventListener("click", percentcalculatorInCommonPhrases_1);
-calculator5.addEventListener("click", percentcalculatorInCommonPhrases_2);
-calculator6.addEventListener("click", percentcalculatorInCommonPhrases_3);
+// calculator4.addEventListener("click", percentcalculatorInCommonPhrases_1);
+// calculator5.addEventListener("click", percentcalculatorInCommonPhrases_2);
+// calculator6.addEventListener("click", percentcalculatorInCommonPhrases_3);
 calculator7.addEventListener("click", percentDifferenceCalculator);
 calculator8.addEventListener("click", percentChangeCalculator);
 
@@ -24,15 +24,29 @@ function overallPercentage(){
 
 // CGPA to Percentage Calculator
 function cgpaToPercentage(){
-    var cgpa = document.getElementById("cgpa").value;
-    document.getElementById("output2").value = cgpa * 9.5;
+    var cgpa = document.getElementById("output22").value;
+    if(cgpa>10){
+        document.getElementById("output22").value="";
+    }
+    document.getElementById("output21").value = Math.round(cgpa * 9.5);
 }
 
-// // Percentage to CGPA Calculator
-// function percentageToCgpa(){
-//     var cgpa = document.getElementById("cgpa").value;
-//     document.getElementById("output2").value = cgpa * 9.5;
-// }
+// Percentage to CGPA Calculator
+function percentageToCgpa(){
+    var percent = document.getElementById("output21").value;
+    if(percent >100){
+        document.getElementById("output21").value="";
+    }
+    var resultcgpa =(percent / 9.5).toFixed(1);
+    if(resultcgpa>10){
+        document.getElementById("output22").value = 10;
+    }
+    
+    else{
+        document.getElementById("output22").value = resultcgpa;
+    }
+    
+}
 
 // Percentage Calculator
 function percentCalculator(){
@@ -45,19 +59,38 @@ function percentCalculator(){
 function percentcalculatorInCommonPhrases_1(){
     var percent1 = document.getElementById("per1").value;
     var amount1 = document.getElementById("amt1").value;
-    document.getElementById("output4").value = (percent1/100)*amount1;
+    var result1 = (percent1/100)*amount1;
+    if(result1===0 || result1===NaN){
+        document.getElementById("output4").value = "";
+    }
+    else{
+      document.getElementById("output4").value = result1; 
+    }
+     
 }
 
 function percentcalculatorInCommonPhrases_2(){
     var val1 = document.getElementById("val1").value;
     var val2 = document.getElementById("val2").value;
-    document.getElementById("output5").value = (val1/val2)*100;
+    var result2 = (val1/val2)*100;
+    if(result2===0 || result1===NaN){
+        document.getElementById("output4").value = "";
+    }
+    else{
+      document.getElementById("output4").value = result2; 
+    }
 }
 
 function percentcalculatorInCommonPhrases_3(){
     var val3 = document.getElementById("val3").value;
     var val4 = document.getElementById("val4").value;
-    document.getElementById("output6").value = val3 / (val4/100);
+    var result3 = val3 / (val4/100);
+    if(result3===0 || result1===NaN){
+        document.getElementById("output4").value = "";
+    }
+    else{
+      document.getElementById("output4").value = result3; 
+    }
 }
 
 //Percentage Difference Calculator
